@@ -11,8 +11,7 @@
 			document.getElementById("nav").classList.remove("nav-light");
 
 			
-			document.getElementById("back-btn").classList.add("btn-dark");
-			document.getElementById("back-btn").classList.remove("btn-light");
+			
 
 
 			Array.from(document.getElementsByClassName("inpt-form")).forEach(element => {
@@ -32,9 +31,7 @@
 			document.getElementById("nav").classList.remove("nav-dark");
 			document.getElementById("nav").classList.add("nav-light");
 
-			document.getElementById("back-btn").classList.add("btn-light");
-			document.getElementById("back-btn").classList.remove("btn-dark");
-
+			
 
 			Array.from(document.getElementsByClassName("inpt-form")).forEach(element => {
 				element.classList.remove("dark-input");
