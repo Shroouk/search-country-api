@@ -106,7 +106,7 @@ div.id =id;
 
 
   
-
+  let   newArr=[];
 
   function init(data){
     
@@ -139,6 +139,34 @@ div.id =id;
           }
         }
 
+
+
+        document.getElementById("sbox").addEventListener('keyup',(e)=>{
+            const term = e.target.value.toLowerCase();
+        
+            console.log(term)
+            newArr=data;
+            if(term == ""){
+                renderElms(data)
+            }else{
+             
+                newArr = data.filter(function (el) {
+                    return el.name.common.toLowerCase().includes(term)
+                    //return el.name.common == term
+                  }); 
+        
+                 console.log(newArr)
+                 renderElms(newArr)
+            }
+            
+              
+            
+              
+          
+        
+        })
+        
+
        
         
 
@@ -166,6 +194,7 @@ div.id =id;
             console.log(element.id);
             localStorage.setItem("country", element.id);
             window.location.href = "https://shroouk.github.io/search-country-api/country.html";
+          // window.location.href = "../country.html";
         })
     });
   }
@@ -180,32 +209,6 @@ div.id =id;
 
 
   //search filter
-const searchBar = document.forms['searchform'].querySelector('input');
-searchBar.addEventListener('keyup',(e)=>{
-    const term = e.target.value.toLowerCase();
-
-
-    
-        flagsArr = data.filter(function (el) {
-            return el.name.common == term
-          }); 
-
-         console.log(flagsArr)
-         renderElms(flagsArr)
-    
-      
-    
-   /*  const countryname =getElementsByClassName('c-name');
-    Array.from(countryname).forEach((name) => {
-      const title = name.firstElementChild.textContent.toLowerCase();
-      if (title.indexOf(term) != -1) {
-        name.style.display='block';
-      }else {
-        name.style.display='none';
-      }
-    }); */
-
-})
 
 
  
