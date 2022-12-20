@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap');
+
+
+:root {
+
+    --darkBlue : hsl(209, 23%, 22%);          /* (Dark Mode Elements) */
+    --vDarkBlue : hsl(207, 26%, 17%);        /* (Dark Mode Background) */
+    --veryDarkBlue : hsl(200, 15%, 8%);     /* (Light Mode Text) */
+    --darkGray : hsl(0, 0%, 52%);          /* (Light Mode Input) */
+    --veryLightGray : hsl(0, 0%, 98%);    /* (Light Mode Background) */
+    --White : hsl(0, 0%, 100%)             /* (Dark Mode Text & Light Mode Elements) */
+
+  }
+
+*{
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+  /*   transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1); */
+}
+
+a{
+  text-decoration: none;
+}
+
+body{
+  color: var(--veryDarkBlue);
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.dark-mode{
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+nav{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  height: 80px;
+  padding: 15px 50px;
+  box-shadow: 1px 2px 10px rgb(0 0 0 / 10%);
+  align-items: center;
+}
+
+.nav-dark{
+  background: var(--darkBlue);
+}
+.nav-light{
+  background: var(--White);
+}
+
+
+#button {
+  display: flex;
+}
+
+#dm {
+  display: none;
+}
+.night-btn {
+  cursor: pointer;
+  align-self: center;
+}
+
+.night-btn img{
+  width: 18px;
+}
+
+
+.form-wrapper{
+  justify-content: space-around;
+}
+
+.inpt-form{
+  height: 50px;
+}
+.light-input{
+  background-color: #fff;
+  color: var(--darkBlue);
+  box-shadow: rgb(60 64 67 / 30%) 0px 1px 2px 0px, rgb(60 64 67 / 15%) 0px 2px 6px 2px;
+}
+
+.dark-input{
+  color: #fff;
+  background-color: var(--darkBlue) !important;
+  box-shadow: rgb(0 0 0 / 30%) 0px 1px 2px 0px, rgb(124 124 124 / 15%) 0px 2px 6px 2px;
+}
+
+.dark-input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #fff;
+  opacity: 1; /* Firefox */
+}
+
+.main-wrapper{
+  text-align: -webkit-center;
+}
+
+.grid {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.grid-item {
+  min-width: 25%;
+  max-width: 100%;
+  flex: 1 1 250px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  margin-bottom: 4rem;
+  text-align-last: start;
+}
+
+.wrapper {
+  min-height: 100vh;
+  padding: 2rem 0;
+  color: #e4e4e8;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+.wrapper h1 {
+  font-size: 2.125em;
+  line-height: 1.5;
+}
+.wrapper p {
+  font-size: 1em;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  color: #c4c4c8;
+}
+
+.grid-item figure {
+  padding: 0;
+  margin: 0;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.05);
+}
+.grid-item figure img {
+  display: block;
+  width: 100%;
+    height: 175px;
+    border-radius: 9px 9px 0 0;
+}
+.grid-item figcaption {
+  display: block;
+  padding: 0.625rem 0.5rem;
+}
+
+
+.list-group-item {
+  background-color: transparent;
+  border: none;
+}
+
+.inner-items{
+  width: 88%;
+  box-shadow: 0 20px 40px -5px rgb(66 66 66 / 70%);
+    border-radius: 10px;
+}
+
+.list-group-item {
+  color: inherit;
+}
+.list-content{
+  padding-bottom: 2rem;
+}
+.list-content h3 {
+  padding: 1rem 1rem .25rem;
+  font-size: 18px;
+  font-weight: 800;
+}
+.list-tag{
+  font-weight: 600;
+  font-size: 15px;
+  margin-right: 5px;
+}
+
+.list-group-item {
+  padding: 2px 1rem;
+}
+
+
+div#searchBox {
+  float: none;
+  text-align: center;
+  color: #777;
+}
+
+#searchform {
+  border-bottom: 1px solid #ccc;
+  padding: 8px 0 0;
+}
+
+#searchform input {
+  border: 0px;
+  background: transparent;
+  padding: 8px 45px 5px;
+  outline: none;
+}
+
+.mobile-form #searchform {
+  padding-top: 2.5px;
+  width: 215px;
+}
+.form-select{
+  border: 0;
+}
+div#searchBox #searchform {
+  border: 0;
+  width: 100%;
+  padding-top: 1px;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+div#searchBox #searchform input {
+ 
+  display: block;
+}
+
+#searchBox i.fa.fa-search {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.sb-icon-search,
+.sb-search-submit {
+  width: 30px;
+  height: 30px;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0;
+  margin: 0;
+  line-height: 30px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.sb-search-submit {
+  background: #fff;
+  /* IE needs this */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  /* IE 8 */
+  filter: alpha(opacity=0);
+  /* IE 5-7 */
+  opacity: 0;
+  color: transparent;
+  border: none;
+  outline: none;
+  z-index: 100;
+}
+
+div#searchBox #searchform .sb-icon-search {
+  /* color: #fff; */
+  /* background: #3f91c3; */
+  z-index: 90;
+  /* font-size: 22px; */
+  font-family: 'FontAwesome';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  top: -1px;
+}
+
+div#searchBox #searchform .sb-icon-search:before {
+  content: "\f002";
+}
+
+span#noEasy {
+  display: block;
+  /* overflow: hidden; */
+  position: relative;
+  width: 30px;
+  /* height: 30px; */
+  float: left;
+  padding-left: 0px;
+  top: 5px;
+}
+
+span#noEasy input {
+  width: 30px;
+  padding: 0 !important;
+}
+
+/* input#sbox {
+  line-height: 31px;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+} */
+span#noEasy:hover {
+  color: #444;
+}
+
+
+
+
+
+
+
+
+
+.btn-light {
+  box-shadow: rgb(60 64 67 / 30%) 0px 1px 2px 0px, rgb(60 64 67 / 15%) 0px 2px 6px 2px;
+  background: #fff;
+  padding: 8px 40px;
+}
+
+.btn-dark {
+  padding: 8px 40px;
+  background-color: var(--darkBlue) !important;
+  box-shadow: rgb(0 0 0 / 30%) 0px 1px 2px 0px, rgb(124 124 124 / 15%) 0px 2px 6px 2px;
+}
+
+.back-icon{
+  margin-right: 15px;
+}
+
+.flag-img{
+  width: 85%;
+}
+
+.name-heading{
+  
+    padding: 1rem 2rem;
+    font-weight: 800;
+}
+
+
+.bg-light{
+  box-shadow: rgb(60 64 67 / 30%) 0px 1px 2px 0px, rgb(60 64 67 / 15%) 0px 2px 6px 2px;
+    background: #fff;
+    padding: 8px 20px;
+    margin: 5px;
+}
+
+.bg-dark{
+  background-color: var(--darkBlue) !important;
+  box-shadow: rgb(0 0 0 / 30%) 0px 1px 2px 0px, rgb(124 124 124 / 15%) 0px 2px 6px 2px;
+    padding: 8px 20px;
+    margin: 5px;
+    color:#fff !important
+}
+
+
+
+@media screen and (max-width:767px) {
+  nav {
+    padding: 15px 5px;
+}
+h1 {
+  font-size: 1rem;
+}
+.dark-mode {
+  font-size: 1rem;
+}
+.col-sm-3{
+  margin-right: auto;
+}
+.borders-list{
+  display: block;
+}
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countries</title>
+  
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+  
+</head>
+<body>
+
+
+  <nav class="nav-light" id="nav">
+    <div>
+      <h1>Where in the world?</h1>
+    </div>
+    <div>
+      <label class="night-btn" for="dm" name="button">
+        <div id="button">
+        <input id="dm" type="checkbox" onclick="Ck()">
+        <h3 class="dark-mode"><img id="mode-img" src="./imgs/moon-light.svg" > Dark Mode</h3>
+        
+        </div>
+    </label>
+    </div>
+
+  </nav>
+
+
+
+  <main>
+
+    <div class="container">
+
+      <div class="row my-5 form-wrapper">
+        <div class="col-lg-6 mt-3">
+          <div id="searchBox" class="mobile-form">
+            <form  class="search-form" id="searchform" method="get">
+                <span id="noEasy"><input class="sb-search-submit form-control" type="submit" value="">
+                <span class="sb-icon-search fa fa-search"></span></span>
+                <input id="sbox" class="form-control light-input inpt-form " name="q" placeholder="Search for a country...">
+            </form>
+        </div>
+
+        
+        </div>
+        <div class="col-6 col-sm-3 mt-3">
+          <select class="form-select light-input inpt-form" id="select-flags" aria-label="Default select example">
+            <option selected value="all">All</option>
+            <option value="Africa">Africa</option>
+            <option value="Americas">Americas</option>
+            <option value="Asia">Asia</option>
+            <option value="Europe">Europe</option>
+            <option value="Oceania">Oceania</option>
+          </select>
+        </div>
+      </div>
+
+
+      <div class="main-wrapper mx-lg-5">
+        <div class="grid flag-container">
+        
+          
+      </div>
+      </div>
+
+    </div>
+
+  
+  </main>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+       <script src="./js/app.js"></script>
+       <script src="./js/data.js"></script>
+
+</body>
+</html>
