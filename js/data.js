@@ -165,7 +165,7 @@ div.id =id;
         element.addEventListener('click', function(){
             console.log(element.id);
             localStorage.setItem("country", element.id);
-            location.href = "../country.html";
+            window.location.href = "../country.html";
         })
     });
   }
