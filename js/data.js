@@ -145,12 +145,12 @@ div.id =id;
             const term = e.target.value.toLowerCase();
         
             console.log(term)
-            newArr=data;
+            newArr=flagsArr;
             if(term == ""){
                 renderElms(data)
             }else{
              
-                newArr = data.filter(function (el) {
+                newArr = flagsArr.filter(function (el) {
                     return el.name.common.toLowerCase().includes(term)
                     //return el.name.common == term
                   }); 
@@ -194,7 +194,7 @@ div.id =id;
             console.log(element.id);
             localStorage.setItem("country", element.id);
             window.location.href = "https://shroouk.github.io/search-country-api/country.html";
-          // window.location.href = "../country.html";
+           //   window.location.href = "../country.html";
         })
     });
   }
