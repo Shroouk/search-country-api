@@ -165,7 +165,7 @@ div.id =id;
         element.addEventListener('click', function(){
             console.log(element.id);
             localStorage.setItem("country", element.id);
-            window.location.href = "../country.html";
+            window.location.href = "https://shroouk.github.io/search-country-api/country.html";
         })
     });
   }
@@ -180,10 +180,22 @@ div.id =id;
 
 
   //search filter
-/* const searchBar = document.forms['searchform'].querySelector('input');
+const searchBar = document.forms['searchform'].querySelector('input');
 searchBar.addEventListener('keyup',(e)=>{
     const term = e.target.value.toLowerCase();
-    const countryname =getElementsByClassName('c-name');
+
+
+    
+        flagsArr = data.filter(function (el) {
+            return el.name.common == term
+          }); 
+
+         console.log(flagsArr)
+         renderElms(flagsArr)
+    
+      
+    
+   /*  const countryname =getElementsByClassName('c-name');
     Array.from(countryname).forEach((name) => {
       const title = name.firstElementChild.textContent.toLowerCase();
       if (title.indexOf(term) != -1) {
@@ -191,9 +203,9 @@ searchBar.addEventListener('keyup',(e)=>{
       }else {
         name.style.display='none';
       }
-    });
+    }); */
 
-}) */
+})
 
 
  
